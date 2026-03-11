@@ -15,7 +15,7 @@ function Login() {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/login",
+        "https://ai-doc-generator-i8x2.onrender.com/login",
         { email, password }
       );
 

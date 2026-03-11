@@ -23,7 +23,7 @@ function Dashboard() {
             const token = localStorage.getItem("token");
 
             const res = await axios.post(
-                "http://localhost:5000/generate-readme",
+                "https://ai-doc-generator-i8x2.onrender.com/generate-readme",
                 { repoUrl },
                 {
                     headers: {

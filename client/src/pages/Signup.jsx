@@ -15,7 +15,7 @@ function Signup() {
     try {
 
       await axios.post(
-        "http://localhost:5000/signup",
+        "https://ai-doc-generator-i8x2.onrender.com/signup",
         { email, password }
       );
 

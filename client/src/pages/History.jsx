@@ -16,7 +16,7 @@ function History() {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          "http://localhost:5000/history",
+          "https://ai-doc-generator-i8x2.onrender.com/history",
           {
             headers: {
               Authorization: `Bearer ${token}`
