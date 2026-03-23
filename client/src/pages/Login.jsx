@@ -14,8 +14,9 @@ function Login() {
 
     try {
 
+      const API_URL = import.meta.env.DEV ? "http://localhost:5000" : "https://ai-doc-generator-i8x2.onrender.com";
       const res = await axios.post(
-        "https://ai-doc-generator-i8x2.onrender.com/login",
+        `${API_URL}/login`,
         { email, password }
       );
 
